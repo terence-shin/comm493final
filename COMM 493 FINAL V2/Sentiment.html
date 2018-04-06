@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+
+    <title>S h r n k | Sentiment</title>
+</head>    
+    <!-- Navigation bar -->
+  	<nav>
+	    <ul>
+	      <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+	      <li><a href="diagnostic.html" >Diagnostic Test</a></li>
+	      <li><a href="Sentiment.html" class="selected">Sentiment Analysis</a></li>
+	    </ul>
+    </nav>
+
+  <body>
+    <div class="jumbotron">
+      <div class="top">
+        <h1>Let us know how you're feeling today.</h1>
+        <p>Submit a paragraph or a blurb letting us know how your day was, how you felt, and/or what you were up to!</p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Main Content Container -->
+        <div class="row">
+          <!-- Using BS Grid System -->
+          <div class="col-md-8 ">
+            <!-- Display welcome Form to the user -->
+              <div class="form-group">
+
+                <!-- GET RID OF IF NOT NEDDED <label for="comment_query">Today's date is March 22. Click <u>here</u> to change to another date (DO WE NEED THIS OR NO).:</label> -->
+
+                <textarea class="form-control" rows="10" cols="40" id="comment_query"></textarea>
+              </div>
+              <button id="analyze_text" class="btn btn-block btn-primary">Submit</button>
+          </div>
+          
+          <!--
+          <div class="col-md-4">
+            <h4>Why shrnk?</h4>
+            <p>
+              Sentiment in your journal entries will be recorded, in order to provide you with personalized care and services
+            </p>
+            <p>
+              Enter in a comment that would be representative for a customer review, or select a random review, and press analyze.
+            </p>
+            <p>
+              <a href="#" id="main_button">Submit2</a>
+            </p>
+          </div>
+          End of welcome message + submission form 
+        </div> -->
+
+        <hr>
+        <div id="loader" class='container'>
+            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div id="result_text"></div>
+          </div>
+          <div class="col-md-4">
+            <!-- List of the Resulting Class Predictions -->
+            <ul id="results" class='list-group'></ul>
+          </div>
+        </div>
+
+      <!-- End of Main Content Container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <div class = 'bottom'>
+      <h1>How it works</h1>
+      <div class = "col-1">
+        <img src="img/contract.png">
+        <h2>1. Write a blurb, journal entry, or your thoughts of the day</h2>
+      </div>
+      <div class = "col-2">
+        <img src="img/ai.png">
+        <h2>2. We use artificial intelligence to determine the emotions rooted in your submission</h2>
+      </div>
+      <div class = "col-3">
+      <img src="img/happy.png">
+      <h2>3. This is sent to your therapist, so that he/she can better understand your needs</h2>
+    </div>
+    </div>
+  </body>
+</body>
+</html>

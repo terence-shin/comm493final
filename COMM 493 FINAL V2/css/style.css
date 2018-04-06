@@ -1,0 +1,278 @@
+/********************
+Sentiment Analysis Page
+********************/
+html {
+  min-height: 100%;
+}
+
+.top {
+  padding-bottom: 10px;
+  background-image: url(../img/nightsky.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #3349FF;
+  padding-top: 10px;
+}
+
+.container {
+  background-color: grey;
+  background-image: url(../img/nightsky.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.form-control {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5%;
+}
+
+#comment_query {
+  width: 75%;
+  margin: auto;
+}
+
+#analyze_text {
+  width: 75%;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.bottom {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding-bottom: 400px;
+  background-color: #3349FF;
+  margin: 3%;
+  padding-top: 10px;
+  border: 2px solid white;
+
+}
+
+.col-1 {
+  width: 31.33%;
+  float: left;
+  margin: 1%;
+}
+
+.col-2 {
+  width: 31.33%;
+  float: left;
+  margin: 1%;
+}
+
+.col-3 {
+  width: 31.33%;
+  float: right;
+  margin: 1%;
+}
+
+
+
+
+/********************
+CSS PROVIDED FROM NLC ASSIGNMENT
+********************/
+
+#results {
+    padding-bottom: 50px;
+}
+#result_text p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+span.confidence {
+    background: #DDD;
+    border: 1px solid #333;
+    padding: 10px;
+    font-weight: bold;
+    color: #0815d6;
+}
+span.class_name {
+    border: 1px solid #333;
+    padding: 10px;
+    font-weight: bold;
+    color: #ff00f5;
+    background: #DDD;
+}
+.default-comment {
+    width: 100%;
+    min-height: 50px;
+    background: #FEFEFE;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.default-comment:hover {
+    background: #EFEFEF;
+}
+
+/*
+* CSS Spinner */ 
+#loader {
+  text-align: center;
+  padding: 50px;
+  display: none;
+}
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1B9A59;
+  }
+  100% {
+    stroke: #4285F4;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1B9A59;
+  }
+  100% {
+    stroke: #4285F4;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+/********************
+GENERAL
+********************/
+* {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+} 
+
+
+/********************
+NAVIGATION
+********************/
+
+nav {
+  text-align: center;
+  padding: 10px 0 15px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 700;
+  padding: 15px 5px;
+  text-decoration: none;
+}
+
+/* link */
+a {
+  color: grey;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: grey; 
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #3349FF;
+}

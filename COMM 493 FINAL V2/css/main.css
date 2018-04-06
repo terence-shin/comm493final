@@ -1,0 +1,195 @@
+/********************
+GENERAL
+********************/
+* {
+	font-family: 'Montserrat', sans-serif;
+	max-width: 100%;
+} 
+
+
+/********************
+NAVIGATION
+********************/
+
+nav {
+  text-align: center;
+  padding: 10px 0 15px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 700;
+  padding: 15px 5px;
+  text-decoration: none;
+}
+
+/* link */
+a {
+  color: grey;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: grey; 
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #3349FF;
+}
+
+/********************
+HOME PAGE
+********************/
+
+#intro {
+	background-image: url(../img/sky.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+}
+
+.homeimage {
+	padding: 25px;
+}
+
+.profilepic {
+	margin-top: 10px;
+	border: 3px solid #3349FF;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 20px;
+}
+
+.introname {
+	text-align: center;
+	font-size: 40px;
+	color: #3349FF;
+	margin-top: -5px;
+	padding: 0 20px 0 20px;
+	text-shadow: 2px 2px black;
+}
+
+.introsubheading {
+	text-align: center;
+	font-size: 13px;
+	color: #3349FF;
+	margin-top: -10px;
+	padding-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+/********************
+ABOUT
+********************/
+
+#about {
+	background-color: white;
+	margin-top: -20px;
+	color: black;
+	border-top: 3px solid #3349FF;
+}
+
+.aboutleft {
+	text-align: center;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #3349FF;
+	text-shadow: 2px 2px black;
+	margin-bottom: -25px;
+}
+
+.aboutright {
+	text-align: left;
+	font-size: 20px;
+	padding: 0 20px 20px 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+}
+
+/********************
+Shrnk helps you stay in tune with your emotions
+********************/
+
+#skills {
+	text-align: center;
+	background-image: url(../img/texting1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -25px;
+	color: #3349FF;
+	border-top: 3px solid #3349FF;
+	padding-bottom: 60px;
+}
+
+.skillstitle {
+	font-size: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-shadow: 2px 2px black;
+}
+
+.skillsright {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-shadow: 2px 2px black;
+}
+
+
+.grid {
+  	display: flex;                       /* establish flex container */
+  	flex-wrap: wrap;                     /* enable flex items to wrap */
+  	justify-content: space-around;
+  	
+}
+.cell {
+ 	flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  	height: 100px;
+  	margin-bottom: 5px;
+  	background-color: white;
+  	font-size: 20px;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+/********************
+PROFILE
+********************/
+.profile {
+	padding: 25px;
+	width: 22%;
+	float: left;
+}
+
+.info {
+	width: 70%;
+	float: right;
+	color: black;
+	padding-right: 25px;
+}
+
+.history {
+	float: left;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-right: 15px;
+}

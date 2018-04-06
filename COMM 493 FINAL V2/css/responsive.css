@@ -1,0 +1,159 @@
+@media screen and (min-width: 660px)  {
+
+	/********************
+	NAVIGATION
+	********************/
+	nav {
+
+	}
+
+	nav ul li {
+	  	margin: 0 20px;
+	}
+
+	/*****GENERAL*****/
+	.container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	/*****HOME*****/
+	#intro {
+		height: 475px;
+	}	
+
+	.homeimage {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		padding: 0;
+		margin-top: 110px;
+		margin-left: 25%;
+		position: top: 50%; 
+		transform: translateX(-50%) /* delete if you cant fix */
+	}
+
+	.homeheadings {
+		width: 40%;
+		display: inline-block;
+		float: right;
+		padding: 0;
+		margin-top: 115px;
+		margin-right: 10%;
+	}
+
+	.introname {
+		font-size: 45px;
+	}
+
+	.introsubheading {
+		font-size: 14px;
+	}
+
+
+	/*****ABOUT*****/
+	#about {
+		height: 350px;
+		padding-top: 10px;
+	}
+
+	.aboutleft {
+		float: left;
+		width: 45%;
+		padding: 0px;
+		margin-left: 5%;
+		font-size: 17px;
+	}
+
+	.aboutleft h1 {
+		margin-top: 115px;
+		margin-left: -30px;
+	}
+
+	.aboutright {
+		width: 45%;
+		display: inline-block;
+		float: right;
+		padding: 0 5% 0 0;
+		margin-top: 3%;
+	}
+
+
+	/*****SKILLS*****/
+	#skills {
+		height: 450px;
+	}
+
+	.skillstitle {
+		font-size: 40px;
+	}
+
+	.skillsleft {
+		float: left;
+		width: 40%;
+		padding: 0;
+		margin-top: 125px;
+		margin-left: 5%;
+	}
+
+	.skillsright {
+		width: 35%;
+		float: right;
+		padding: 0;
+		margin-right: 10%;
+		margin-top: 75px;
+	}
+
+	/*****EDUCATION*****/
+
+}
+
+@media screen and (min-width: 972px)  {
+
+	.container {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+
+	/*****HOME*****/
+	#intro {
+		height: 475px;
+	}	
+
+	.homeimage {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		padding: 0;
+		margin-top: 110px;
+		margin-left: 25%;
+		position: top: 50%; 
+		transform: translateX(-50%) /* delete if you cant fix */
+	}
+
+	.homeheadings {
+		width: 40%;
+		display: inline-block;
+		float: right;
+		padding: 0;
+		margin-top: 160px;
+		margin-right: 10%;
+	}
+
+	.introname {
+		font-size: 60px;
+	}
+
+	.introsubheading {
+		font-size: 18px;
+	}
+
+
+
+};
